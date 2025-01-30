@@ -34,17 +34,17 @@ bot = Client(
 
 
 
-@bot.on_message(filters.command(["start"]))
+@bot.on_message(filters.command(["tushar"]))
 async def start(bot: Client, m: Message):
     editable = await m.reply_text(
-       f"𝐇𝐞𝐥𝐥𝐨 ❤️\n\n ▂▃▅▇█▓▒░ ❤️  SONIC KUWAL SSC BOT 🌈™ ❤️ ░▒▓█▇▅▃▂ \n\n❈ I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically\n\n If You Want To Use Me First Send Me ⟰ \n /txt Command And Then Follow Few Steps..\n\n I working link ALL APP TXT WORKING NOT WORKING YOUTUBE LINK. \n\n YOUTUBE LINK WORKING SOON POSSIBLE....\n\n more apps add SOON update contact me :- <a href='https://telegram.me/SONICKUWALSSCBOT'>❖ ꧁༺ ❤️ 𝓚𝓐𝓝𝓗𝓐𝓘𝓨𝓐 𝓛𝓐𝓛 𝓜𝓔𝓔𝓝𝓐 𝓚𝓤𝓦𝓐𝓛 💕 ༻꧂ ❖ ™</a>", reply_markup=InlineKeyboardMarkup(
+       f"𝐇𝐞𝐥𝐥𝐨 ❤️\n\n❈I am Txt To Video Uploader Bot\n\n❈For Use Me Send /tushar Command</a>", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✜" ,url=f"https://t.me/SONICKUWALUPDATEKANHA") ],
+                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✜" ,url=f"https://t.me/AIM_AIIMS143") ],
                     [
-                    InlineKeyboardButton("✜◆ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 ◆✜" ,url="https://t.me/SONICKUWALSSCBOT") ],
+                    InlineKeyboardButton("✜◆ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 ◆✜" ,url="https://t.me/Tushar0125") ],
                     [
-                    InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/SONICKUWALSSCBOT") ]                               
+                    InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/Tushar0125") ]                               
             ]))
     
 @bot.on_message(filters.command("stop"))
@@ -55,7 +55,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["txt"]))
 async def upload(bot: Client, m: Message):
-    editable = await m.reply_text('𝕤ᴇɴᴅ ᴛxᴛ ғɪʟᴇ ⚡️.**\n\nDeveloper** : 🅑🅞🅣 🅜🅐🅓🅔 🅑🅨  LOVER 💖 BOY  content: @SONICKUWALSSCBOT **')
+    editable = await m.reply_text('𝕤ᴇɴᴅ ᴛxᴛ ғɪʟᴇ ⚡️')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -113,7 +113,7 @@ async def upload(bot: Client, m: Message):
     
     
 
-    await editable.edit("Now Enter A Caption to add caption on your uploaded file")
+    await editable.edit("Now Enter A Caption to add caption on your uploaded file\n\nEg ➤ Tushar")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -123,7 +123,7 @@ async def upload(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now send the Thumb url/nEg » https://graph.org/file/61cc479c28b7ed60b4bc9-ca29dd2be7cf33e737.jpg \n Or if don't want thumbnail send = no")
+    await editable.edit("Now send the Thumb url\n\nOr if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -195,8 +195,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:❤️ @SONICKUWALSSCBOT ❤️** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}({res}) [Alex].mkv\n**🔗URL »**`{url}`**\n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ https://sonickuwalssc.blogspot.com/ **'
-                cc1 = f'**[📁] Pdf_ID:❤️ @SONICKUWALSSCBOT ❤️** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}{MR} [Alex].pdf\n**🔗URL »**`{url}`**\n\n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ https://sonickuwalssc.blogspot.com/ **'
+                cc = f'**[📽️] Vid_ID : ** {str(count).zfill(3)}.**\n\n**🎊Title** ➤ {𝗻𝗮𝗺𝗲𝟭}.Tushar.mkv**\n\n\n**📚Batch Name** ➤ **{raw_text0}**\n\n\n**Downloaded By ➤ **{raw_text3}**'
+                cc1 = f'**[📁] Pdf_ID : ** {str(count).zfill(3)}.**\n\n**🎊Title** ➤ {𝗻𝗮𝗺𝗲𝟭}.Tushar.pdf**\n\n\n**📚Batch Name** ➤ **{raw_text0}**\n\n**Downloaded By ➤ **{raw_text3}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -211,18 +211,18 @@ async def upload(bot: Client, m: Message):
                 
                 elif ".pdf" in url:
                     try:
-                        cmd = f'yt-dlp -o " @SONICKUWALSSCBOT {name}.pdf" "{url}"'
+                        cmd = f'yt-dlp -o "{name}.pdf" "{url}"'
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
-                        copy = await bot.send_document(chat_id=m.chat.id, document=f' @SONICKUWALSSCBOT {name}.pdf', caption=cc1)
+                        copy = await bot.send_document(chat_id=m.chat.id, document=f'{name}.pdf', caption=cc1)
                         count += 1
-                        os.remove(f' @SONICKUWALSSCBOT {name}.pdf')
+                        os.remove(f'{name}.pdf')
                     except FloodWait as e:
                         await m.reply_text(str(e))
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**📝Name »** `{name}\n❄Quality » {raw_text2}`\n\n**🔗URL »** `{url}`"
+                    Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**📝Name »** `{name}\n\n❄Quality » {raw_text2}`\n\n**🔗URL »** `{url}`"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -239,7 +239,7 @@ async def upload(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**𝔻ᴏɴᴇ 𝔹ᴏ𝕤𝕤😎**")
+    await m.reply_text("**😎✅Successfully Done✅😎**")
 
 
 bot.run()
