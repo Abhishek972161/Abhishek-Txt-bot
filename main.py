@@ -34,7 +34,7 @@ bot = Client(
 
 
 
-@bot.on_message(filters.command(["tushar"]))
+@bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
     editable = await m.reply_text(
        f"𝐇𝐞𝐥𝐥𝐨 ❤️\n\n❈I am Txt To Video Uploader Bot\n\n❈For Use Me Send /tushar Command</a>", reply_markup=InlineKeyboardMarkup(
@@ -53,7 +53,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
     
 
-@bot.on_message(filters.command(["txt"]))
+@bot.on_message(filters.command(["tushar"]))
 async def upload(bot: Client, m: Message):
     editable = await m.reply_text('𝕤ᴇɴᴅ ᴛxᴛ ғɪʟᴇ ⚡️')
     input: Message = await bot.listen(editable.chat.id)
